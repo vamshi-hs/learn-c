@@ -4,13 +4,13 @@ Data structure and algorithms in c
 
 ## Search
 
-- [x] Linear search(./linear_search/linear_search.c)
-- [x] Binary search
+- :white_check_mark: Linear search(./linear_search/linear_search.c)
+- :white_check_mark: Binary search
 
 ## Sorting Algorithms
 - [x] Bubble Sort
 - [x] Selection Sort
-- :white_check_mark: Insertion Sort
+- [x] Insertion Sort
 - [ ] Merge Sort
 - [ ] Quick Sort
 - [ ] Heap Sort
