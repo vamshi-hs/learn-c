@@ -8,7 +8,7 @@ Data structure and algorithms in c
 - [x] Binary search
 
 ## Sorting Algorithms
-- [ ] Bubble Sort
+- [x] Bubble Sort
 - [ ] Selection Sort
 - [ ] Insertion Sort
 - [ ] Merge Sort
