@@ -7,6 +7,15 @@ Data structure and algorithms in c
 - [x] Linear search(./linear_search/linear_search.c)
 - [x] Binary search
 
+## Sorting Algorithms
+- [ ] Bubble Sort
+- [ ] Selection Sort
+- [ ] Insertion Sort
+- [ ] Merge Sort
+- [ ] Quick Sort
+- [ ] Heap Sort
+- [ ] Radix Sort
+
 ## Data Structures
 - [ ] Arrays
 - [ ] Linked lists
