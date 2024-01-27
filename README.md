@@ -10,7 +10,7 @@ Data structure and algorithms in c
 ## Sorting Algorithms
 - [x] Bubble Sort
 - [x] Selection Sort
-- [x] Insertion Sort
+- :white_check_mark: Insertion Sort
 - [ ] Merge Sort
 - [ ] Quick Sort
 - [ ] Heap Sort
