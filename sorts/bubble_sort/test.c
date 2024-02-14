@@ -32,9 +32,6 @@ void test_bubble(){
 
 int main(){
 	test_bubble();
-	printf("Test passed");
-	//printf("Array after sorting: \n");
-	//int res_arr[] = {4,12,23,32,32,34,54,65,324,565};
-	//int n = sizeof(res_arr)/sizeof(res_arr[0]);
+	printf("Bubble sort test passed");
 	printf("\n");
 }

@@ -10,7 +10,7 @@ void test(){
 	int result1 = binary_search(arr2,0,n,13);
 	int result2 = binary_search(arr2,0,n,10);
 	int result3 = binary_search(arr2,0,n,100);
-			//sizeof(arr2)/sizeof(int) - 1,13);
+	//sizeof(arr2)/sizeof(int) - 1,13);
 //	int result2 = binary_search(arr2,0,sizeof(arr2)/sizeof(int) - 1,10);
 //	int result3 = binary_search(arr2,0,sizeof(arr2)/sizeof(int) - 1,100);
 //	assert(result1 == 12);

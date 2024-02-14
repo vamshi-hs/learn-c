@@ -41,7 +41,6 @@ void merge(int *arr,int low,int mid,int high){
 }
 
 void merge_sort(int *arr,int l,int r){
-
 	if (l < r) {
 		int mid = l + (r - l) / 2;
 		merge_sort(arr,l,mid);
