@@ -12,7 +12,7 @@ Data structure and algorithms in c
 - [x] Selection Sort
 - [x] Insertion Sort
 - [x] Merge Sort
-- [ ] Quick Sort
+- [x] Quick Sort
 - [ ] Heap Sort
 - [ ] Radix Sort
 
