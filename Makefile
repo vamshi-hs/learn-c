@@ -6,6 +6,10 @@ say_bye:
 
 CC = gcc
 
+bst_test: ./trees/bst/test.c
+	@${CC} ./trees/bst/test.c ./trees/bst/binary_search_tree.c -o ./trees/bst/binary_search_test
+	@./trees/bst/binary_search_test
+
 quick_sort_test: ./sorts/quick_sort/test.c
 	@${CC} ./sorts/quick_sort/test.c ./sorts/quick_sort/quick_sort.c -o ./sorts/quick_sort/quick_sort_test
 	@./sorts/quick_sort/quick_sort_test
@@ -35,5 +39,10 @@ linear_test: ./linear_search/test.c
 	@${CC} ./linear_search/test.c ./linear_search/linear_search.c -o ./linear_search/linear_search_test 
 	@./linear_search/linear_search_test
 
-.DEFAULT_GOAL := quick_sort_test
+al_test: ./arrayList/test.c
+	@${CC} ./arrayList/test.c ./arrayList/array_list.c -o ./arrayList/array_list_test 
+	@./arrayList/array_list_test
+
+
+.DEFAULT_GOAL := al_test
 # .DEFAULT_GOAL := say_bye
