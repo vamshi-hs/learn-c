@@ -8,6 +8,8 @@ void test(){
 	al_print(alist);
 	al_pop(&alist);
 	al_print(alist);
+	al_insert_at(&alist,1,34);
+	al_print(alist);
     /* printf("TODO: testing arraylist\n"); */
 }
 
