@@ -12,3 +12,4 @@ void al_print(struct ArrayList alist);
 int al_pop(struct ArrayList *alist);
 void al_insert_at(struct ArrayList *alist,int index,int newValue);
 struct ArrayList al_empty_new();
+void al_free(struct ArrayList *alist);

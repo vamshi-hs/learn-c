@@ -24,9 +24,6 @@ struct ArrayList al_empty_new(){
 }
 
 void al_push(struct ArrayList *alist,int new_value){
-	/* if (alist == NULL){ */
-	/* 	struct al_new(new_value); */
-	/* } */
 	if (alist->capacity == 0){
 		alist->data = malloc(2*sizeof(int));
 		alist->data[0] = new_value;
@@ -66,4 +63,8 @@ void al_insert_at(struct ArrayList *alist,int index,int newValue){
 	memmove(alist->data+index+1,alist->data+index,(alist->len-index+1)*sizeof(int));
 	alist->data[index] = newValue; 
 	alist->len++;
+}
+
+void al_free(struct ArrayList *alist){
+	free(alist->data);
 }

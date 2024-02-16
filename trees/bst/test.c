@@ -18,6 +18,7 @@ void testBst(){
 	printf("\n");
 	assert(search(tree,2));
 	assert(!search(tree,12));
+	al_free(&alist);
 }
 
 int main(){
