@@ -13,14 +13,14 @@ Data structure and algorithms in c
 - [x] Insertion Sort
 - [x] Merge Sort
 - [x] Quick Sort
-- [ ] Heap Sort
+- [x] Heap Sort
 - [ ] Radix Sort
 
 ## Data Structures
-- [ ] Arrays
-- [ ] Linked lists
-- [ ] Stacks
-- [ ] Queues
+- [x] Arrays
+- [x] Linked lists
+- [x] Stacks
+- [x] Queues
 - [ ] Trees(Binary Trees, BST,..etc)
 - [ ] Graphs
 - [ ] Hash Tables
