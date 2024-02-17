@@ -43,6 +43,10 @@ al_test: ./arrayList/test.c
 	@${CC} ./arrayList/test.c ./arrayList/array_list.c -o ./arrayList/array_list_test 
 	@./arrayList/array_list_test
 
+heap_test: ./trees/heap/minHeap/test.c
+	@${cc} ./trees/heap/minHeap/test.c ./trees/heap/minHeap/minHeap.c ./arrayList/array_list.c -o ./trees/heap/minHeap/minHeap_test
+	@./trees/heap/minHeap/minHeap_test
 
-.DEFAULT_GOAL := bst_test
+.DEFAULT_GOAL := heap_test
+#bst_test
 # .DEFAULT_GOAL := say_bye
