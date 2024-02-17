@@ -1,4 +1,3 @@
-/* #include "../../arrayList/array_list.h" */
 #include "../../arrayList/array_list.h"
 
 struct Bst{

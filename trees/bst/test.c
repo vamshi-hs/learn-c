@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
 #include "./binary_search_tree.h"
-/* #include "../../arrayList/array_list.h" */
 
 void testBst(){
 	printf("Testing bst........\n");
