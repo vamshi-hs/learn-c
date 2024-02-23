@@ -50,10 +50,11 @@ Data structure and algorithms in c
 - [ ] Prim's Algorithm
 
 ## String Algorithms
-### [ ] String Matching(Naive, KMP,Rabin-Karp)
+### String Matching(Naive, KMP,Rabin-Karp)
 - [x] Naive search
 - [ ] KMP
 - [ ] Boyer moore
+
 - [ ] Longest Common Subsequence (LCS)
 - [ ] Longest Increasing Subsequence (LCS)
 
