@@ -21,6 +21,7 @@ Data structure and algorithms in c
 - [x] Linked lists
 - [x] Stacks
 - [x] Queues
+- [x] Heap
 - [ ] Trees(Binary Trees, BST,..etc)
 - [ ] Graphs
 - [ ] Hash Tables
