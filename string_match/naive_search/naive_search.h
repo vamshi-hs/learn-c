@@ -1,0 +1,1 @@
+int naive_search(char *haystack,char *needle);

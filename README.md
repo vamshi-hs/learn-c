@@ -22,7 +22,7 @@ Data structure and algorithms in c
 - [x] Stacks
 - [x] Queues
 - [x] Heap
-- [ ] Trees(Binary Trees, BST,..etc)
+- [x] Trees(Binary Trees, BST,..etc)
 - [ ] Graphs
 - [ ] Hash Tables
 
@@ -35,8 +35,8 @@ Data structure and algorithms in c
 - [ ] Disjoint Set (Union-Find)
 
 ## Algorithmic Paradigms
-- [ ] Recursion
-- [ ] Divide and Conquer
+- [x] Recursion
+- [x] Divide and Conquer
 - [ ] Dynamic Programming
 - [ ] Greedy Algorithms
 - [ ] Backtracking
@@ -50,7 +50,10 @@ Data structure and algorithms in c
 - [ ] Prim's Algorithm
 
 ## String Algorithms
-- [ ] String Matching(Naive, KMP,Rabin-Karp)
+### [ ] String Matching(Naive, KMP,Rabin-Karp)
+- [x] Naive search
+- [ ] KMP
+- [ ] Boyer moore
 - [ ] Longest Common Subsequence (LCS)
 - [ ] Longest Increasing Subsequence (LCS)
 
