@@ -26,7 +26,7 @@ Data structure and algorithms in c
 - [ ] Hash Tables
 
 ## Advanced Data Structures
-- [ ] AVL Trees
+- [x] AVL Trees
 - [ ] Red-Black Trees
 - [ ] Trie
 - [ ] Segment Tree
