@@ -57,23 +57,21 @@ void al_print(struct ArrayList alist){
 	printf("\n");
 }
 
-int al_pop(struct ArrayList *alist){
-	if (alist->len <= 0) return -1;
+int al_pop(struct ArrayList *alist,int *returnValue){
+	if (alist->len <= 0) return 0;
 	int head = alist->data[0];
 	memmove(alist->data,alist->data+1,(alist->len-1)*sizeof(int));
 	alist->len--;
-	return head;
+	*returnValue = head;
+	return 1;
 }
 
 void al_remove_at(struct ArrayList *alist,int index){
 	if (index < 0 || index >= alist->len) return;
-	/* if (alist->len+1>alist->capacity){ */
-	/* 	alist->capacity *= 2; */
-	/* } */
 	memmove(alist->data+index,alist->data+index+1,(alist->len-index)*sizeof(int));
-	/* alist->data[index] = newValue; */ 
 	alist->len = alist->len-1;
 }
+
 void al_insert_at(struct ArrayList *alist,int index,int newValue){
 	if (index < 0 || index >= alist->len) return;
 	if (alist->len+1>alist->capacity){

@@ -14,8 +14,11 @@ void test(){
 	minHeap = minH_insert(minHeap,arr[4]);
 	minHeap = minH_insert(minHeap,arr[5]);
 	al_print(minHeap);
-	int popped_value = minH_pop(&minHeap);
-	printf("popped value: %d",popped_value);
+	int popped_value = 0;
+	/* if (minH_pop(&minHeap,&popped_value)){ */
+	/* 	printf("popped value: %d\n",popped_value); */
+	/* } */
+	/* int popped_value = minH_pop(&minHeap); */
 	al_print(minHeap);
 	minHeap = minH_heap_sort(minHeap);
 	printf("Sorted list: ");
