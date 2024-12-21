@@ -15,6 +15,7 @@ void test(){
 
   assert(stack_pop(stack,&returnValue));
   printf("Return value: %d\n",returnValue);
+  assert(returnValue == 4);
   assert(!stack_is_empty(stack));
 }
 
