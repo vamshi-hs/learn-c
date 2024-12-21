@@ -50,6 +50,10 @@ stack_test: ./stack/test.c
 	@${CC} ./stack/test.c ./stack/stack.c ./linked_list/linked_list.c -o ./stack/stack_test
 	@./stack/stack_test
 
+queue_test: ./queue/test.c
+	@${CC} ./queue/test.c ./queue/queue.c ./arrayList/array_list.c -o ./queue/queue_test
+	@./queue/queue_test
+
 
 # heap_test: ./linked_list/test.c
 # 	@${cc} ./linked_list/test.c ./trees/heap/minHeap/minHeap.c ./arrayList/array_list.c -o ./trees/heap/minHeap/minHeap_test
