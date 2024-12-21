@@ -4,10 +4,11 @@
 
 void test(){
     	struct ArrayList alist = al_new(5);
+	int returnValue = 0;
     	al_push(&alist,15);
     	al_push(&alist,25);
 	al_print(alist);
-	al_pop(&alist);
+	al_pop(&alist,&returnValue);
 	al_print(alist);
 	al_insert_at(&alist,1,34);
 	al_print(alist);

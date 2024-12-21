@@ -17,7 +17,7 @@ int naive_search(char *haystack,char *needle){
             temp_i = haystack_i;
             haystack_i++;
             needle_i++;
-            while ( haystack_i < haystack_len 
+            while (haystack_i < haystack_len 
                     && needle_i < needle_len 
                     && haystack[haystack_i] == needle[needle_i]){
                     haystack_i++;

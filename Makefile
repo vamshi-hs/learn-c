@@ -26,7 +26,6 @@ selection_sort_test: ./sorts/selection_sort/test.c
 	@${CC} ./sorts/selection_sort/test.c ./sorts/selection_sort/selection_sort.c -o ./sorts/selection_sort/selection_sort_test
 	@./sorts/selection_sort/selection_sort_test
 
-
 bubble_sort_test: ./sorts/bubble_sort/test.c
 	@${CC} ./sorts/bubble_sort/test.c ./sorts/bubble_sort/bubble_sort.c -o ./sorts/bubble_sort/bubble_sort_test
 	@./sorts/bubble_sort/bubble_sort_test
@@ -43,10 +42,20 @@ al_test: ./arrayList/test.c
 	@${CC} ./arrayList/test.c ./arrayList/array_list.c -o ./arrayList/array_list_test 
 	@./arrayList/array_list_test
 
-heap_test: ./trees/heap/minHeap/test.c
-	@${cc} ./trees/heap/minHeap/test.c ./trees/heap/minHeap/minHeap.c ./arrayList/array_list.c -o ./trees/heap/minHeap/minHeap_test
-	@./trees/heap/minHeap/minHeap_test
+ll_test: ./linked_list/test.c
+	@${CC} ./linked_list/test.c ./linked_list/linked_list.c -o ./linked_list/linked_list_test 
+	@./linked_list/linked_list_test
 
-.DEFAULT_GOAL := heap_test
+stack_test: ./stack/test.c
+	@${CC} ./stack/test.c ./stack/stack.c ./linked_list/linked_list.c -o ./stack/stack_test
+	@./stack/stack_test
+
+
+# heap_test: ./linked_list/test.c
+# 	@${cc} ./linked_list/test.c ./trees/heap/minHeap/minHeap.c ./arrayList/array_list.c -o ./trees/heap/minHeap/minHeap_test
+# 	@./trees/heap/minHeap/minHeap_test
+# ./trees/heap/minHeap/test.c
+# trees/heap/minHeap/
+.DEFAULT_GOAL := stack_test
 #bst_test
 # .DEFAULT_GOAL := say_bye

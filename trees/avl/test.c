@@ -7,8 +7,8 @@ void test_avl(){
 	struct AVL *tree = NULL;
 	int size = sizeof(arr)/sizeof(arr[0]);
 	for(int i=0 ; i < size ; i++){
-		printf("inserting %d\n",arr[i]);
-		tree = avl_insert(tree,arr[i]);
+	  printf("inserting %d\n",arr[i]);
+	  tree = avl_insert(tree,arr[i]);
 	}
 	avl_preorderPrint(tree);
 }

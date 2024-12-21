@@ -7,13 +7,16 @@ struct LinkedList *ll_insert_at_start(struct LinkedList * list,int data){
 		struct LinkedList * newNode = (struct LinkedList*) malloc(sizeof (struct LinkedList));
 		newNode->data = data;
 		newNode->next = NULL;
-		return newNode;
+		list = newNode;
+		return list;
+		/* return newNode; */
 	}
 	struct LinkedList * newNode = (struct LinkedList*) malloc(sizeof (struct LinkedList));
 	newNode->data = data;
 	newNode->next = list;
+	list = newNode;
 	
-	struct LinkedList *new_list = newNode;
+	struct LinkedList *new_list = list;
 	return new_list;
 }
 
@@ -61,4 +64,15 @@ int ll_is_empty(struct LinkedList *list){
 	} else {
 		return 1;
 	}
+}
+
+// pass linked list as reference, returns int for actually removing with 0 for empty list and 1 for non empty list
+int ll_remove_at_first(struct LinkedList *list,int *returnValue){
+  if (!ll_is_empty(list)) {
+    return 0;
+  }
+  
+  *returnValue = list->data;
+  list = list->next;
+  return 1;
 }

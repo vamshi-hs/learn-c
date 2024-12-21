@@ -1,6 +1,6 @@
 #include "../../arrayList/array_list.h"
 
-struct Bst{
+struct Bst {
 	struct Bst *left;
 	int data;
 	struct Bst *right;

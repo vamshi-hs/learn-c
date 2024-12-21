@@ -19,7 +19,7 @@ Data structure and algorithms in c
 ## Data Structures
 - [x] Arrays
 - [x] Linked lists
-- [x] Stacks
+- [x] Stacks(Uses linked list)
 - [x] Queues
 - [x] Heap
 - [x] Trees(Binary Trees, BST,..etc)
