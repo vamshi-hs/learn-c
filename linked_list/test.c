@@ -33,8 +33,27 @@ void test(){
 	assert(returnValue==4);
 }
 
+void test_sortedly(){
+  	printf("Testing linked list insert in sorted order: \n");
+	int arr1[] = {4,3,2,1};
+/* ,2,1}; */
+	int size1 = sizeof(arr1)/sizeof(int);
+	struct LinkedList * list1 = NULL;
+	for (int i = 0; i < size1 ; i++){
+	  list1 = ll_insert_sortedly(list1,arr1[i]);
+	  printf("data: %d",list1->data);
+	}
+	printf("\n");
+	int returnValue = 0;
+	ll_printList(list1);
+	assert(ll_remove_at_first(list1,&returnValue));
+	printf("returnValue: %d\n",returnValue);
+	assert(returnValue == 1);
+}
+
 int main(){
-	test();
+	/* test(); */
+	test_sortedly();
 	printf("Test passed\n");
 	return 0;
 }

@@ -1,3 +1,4 @@
+#include <assert.h>
 #include "./linked_list.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,6 +19,43 @@ struct LinkedList *ll_insert_at_start(struct LinkedList * list,int data){
 	
 	struct LinkedList *new_list = list;
 	return new_list;
+}
+
+struct LinkedList* ll_insert_sortedly(struct LinkedList * list,int data){
+  if (list == NULL){
+    struct LinkedList * newNode = (struct LinkedList*) malloc(sizeof (struct LinkedList));
+    newNode->data = data;
+    newNode->next = NULL;
+    list = newNode;
+    return newNode;
+  }
+  
+  struct LinkedList* temp = list;
+  struct LinkedList* prev = NULL;
+  
+  while(temp != NULL && temp -> data < data) {
+    prev = temp;
+    temp = temp -> next;
+  }
+
+  /* assert(prev != NULL); */
+
+  struct LinkedList * newNode = (struct LinkedList*)malloc(sizeof (struct LinkedList));
+
+  newNode->data = data;
+  newNode->next = NULL;
+  /* return newNode; */
+  if (temp == NULL) {
+    prev -> next = newNode;
+  } else if (prev == NULL){
+    newNode->next = temp;
+    list = newNode;
+  } else {
+    prev->next = newNode;
+    newNode->next = temp;
+  }
+
+  return list;
 }
 
 struct LinkedList *ll_insert_at_end(struct LinkedList * list,int data){

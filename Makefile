@@ -54,6 +54,9 @@ queue_test: ./queue/test.c
 	@${CC} ./queue/test.c ./queue/queue.c ./arrayList/array_list.c -o ./queue/queue_test
 	@./queue/queue_test
 
+radix_sort_test: ./sorts/radix_sort/test.c
+	@${CC} ./sorts/radix_sort/test.c ./sorts/radix_sort/radix_sort.c ./stack/stack.c ./linked_list/linked_list.c -o ./sorts/radix_sort/radix_sort_test
+	@./sorts/radix_sort/radix_sort_test
 
 # heap_test: ./linked_list/test.c
 # 	@${cc} ./linked_list/test.c ./trees/heap/minHeap/minHeap.c ./arrayList/array_list.c -o ./trees/heap/minHeap/minHeap_test

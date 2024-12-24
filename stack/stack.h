@@ -4,6 +4,7 @@
 typedef struct Linked_List Stack;
 
 Stack* stack_push(Stack *stack,int data);
+Stack* stack_insert_sortedly(Stack *stack,int data);
 //0 means empty stack, one means top value removed
-int stack_pop(Stack *stack,int *returnValue); 
+int stack_pop(Stack *stack,int *returnValue);
 int stack_is_empty(Stack *stack);
